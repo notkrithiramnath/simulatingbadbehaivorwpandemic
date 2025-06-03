@@ -1,6 +1,6 @@
 # simulatingbadbehaivorwpandemic
 
-This was a project I made in my senior year in High school for our regional science fairs. 
+This was a project I made in my senior year in High school for our regional science fairs--its a litte rough since this was before I discovered commenting it appears.
 
   Whether its Chicago cops using unjustified violence or teenagers vandalizing a stop sign, numerous studies have shown the correlation between the “goodness” of people around someone and that person’s actions, and how bad behavior often spreads like a contagion. Sometimes the company an individual keeps is not the only factor, in countries like Italy the societal culture against taxes makes their rates of tax evasion alarming  when compared to other developed countries in the region. Whereas in countries like Denmark where following the rules is embedded in society, despite higher taxes their cheating rates are incredibly low.
   
