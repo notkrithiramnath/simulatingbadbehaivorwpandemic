@@ -1,17 +1,23 @@
-# simulatingbadbehaivorwpandemic
+# simulatingpandemic
 
-This was a project I made in my senior year in High school for our regional science fairs--its a litte rough since this was before I discovered commenting it appears.
+This was a project I made in my junior year of High School, when Covid protocols started to relax to prepandemic levels. This was my first deep utilization of OOP, so its a little iffy in some places but I learned alot :)
 
-  Whether its Chicago cops using unjustified violence or teenagers vandalizing a stop sign, numerous studies have shown the correlation between the “goodness” of people around someone and that person’s actions, and how bad behavior often spreads like a contagion. Sometimes the company an individual keeps is not the only factor, in countries like Italy the societal culture against taxes makes their rates of tax evasion alarming  when compared to other developed countries in the region. Whereas in countries like Denmark where following the rules is embedded in society, despite higher taxes their cheating rates are incredibly low.
+  It seems like every time we open the news there is a new disease in town.  Some like Covid or SARS are here to stay and some like Monkeypox have died down significantly (thankfully).  Identifying the best response to these diseases by governments is imperative.  When Covid struck, some countries used lockdowns heavily (China), while other countries used herd immunity (Sweden), and most like the US used a mix of quarantining, vaccination, and herd immunity.  Uganda used limited lockdowns, quarantining, and other measures to control Ebola.  All of these measures have economic costs either through reduced GDP and/or death rates besides other costs.
+
+  I use Discrete-event-simulation (DES) to identify the best governmental response for various diseases.  To do this I model the economics, infections, and death rates of 3 different viruses, Covid-19, Ebola, and Influenza for various governmental control protocols.  Protocols could be to do nothing, quarantining and enforcing lockdowns to various degrees of strictness.  Independent variables for the disease include incubation length, duration of illness, mortality rate, and contagiousness. I also employed Object Oriented Programming to efficiently separate the various entities in the simulation like Person, Government, Statistics, Simulation Engine, and Viruses.  
   
-  In this project I use Object-Oriented-Programming in Python to create a discrete event simulation. I model a scenario of a country collecting taxes and folks evading taxes or paying them. I simulate a “bad virus” that spreads through a population with other viruses that counteract it. These “good viruses” are a fear of verification or a fear of punishment that arises when the government randomly audits someone and discovers the bad virus. The “good” contagion model ways governments can target bad behavior and reduce its spread.
- 
-  I model governments with variables pulled from real life, namely Italy, the US, and Denmark.. Italy has a very high tax evasion rate and has been focusing on implementing more auditing to discover if that would force their evasion rates to drop. The United States has a “normal” number of evasions and a lower audit rate. Denmark has a low auditing rate and a miraculously low cheating rate.
- 
-  I also evaluate the costs associated with each virus. Auditing costs a large amount of money, and when someone is punished their contribution to a government’s GDP is missing. Also, when the government audits someone and they are not “bad”, the government's reputation slightly drops. In the short term, the monetary and reputation costs will not decrease, but if too many audits and punishments are performed these numbers will drop significantly.
+  Costs from controlling pandemics can be either reduced GDP and/or increased mortality rates depending on the approach.   For instance, in theory, lockdowns seem ideal because they ensure that the disease will be contained, but in practice, they are prone to “leaks”, either through service providers or through people ignoring guidelines and infecting others.  This has been discussed in (Cite papers) where lockdowns while effective in the early days result in increased “mobility” or as I call it “leaks” over time.  Another factor to consider is the nature of social and economic interactions.  The same can be said for quarantining as well.  While most people may follow a quarantine, there will be “leaks” or “mobility” over time.  Realistically, one meets with a certain group of people more often than the general population (bubbles), but people also leave their bubbles either due to travel or occasional interactions outside their regular circles.   Another factor is the so called “flattening of the curve” to minimize impact to hospitals from a storm of critically ill patients.  CITE here.  R-values are a measure of the infectiousness of the disease in the context of various protocols
 
+  For my study, I simulate a population of 10000 individuals, who all live in their respective bubbles.  However people may occasionally interact with those outside their bubble.  Additionally, in the case of pandemics, I study the effects of doing nothing, quarantining, and lockdowns to different dependent variables like GDP, Mortality rates, R-values, Peak Infection rates (that drives the flattening of the curve), and ability to eliminate the disease entirely.  All along I also factor in mobility-related leaks to governmental controls.
+  
+  My study found that quarantining in all cases is best for GDP and eliminating disease sooner.  Any form of voluntary to enforced quarantining has a slightly higher mortality rate but impacts the economy minimally.  A Draconian lockdown minimizes deaths but usually at a high cost to the economy.  Any lockdown short of a strict one is worse for the economy and does not do anything significant to eliminate disease sooner or reduce mortality compared to Quarantining.  Doing nothing is never a good idea.
 
-
-The full presentation can be viewed here: https://docs.google.com/presentation/d/1EL_nyW4g94297foC0v8yCOrmz7tbf0qRvpbUqXN8tFA/edit?usp=sharing
+you can read the full presentation here: https://docs.google.com/presentation/d/1kZgkJLoj9HiWSXLaUFWKTVMYOtv_74wYL8BdA2C0DgY/edit?usp=sharing
 
 Thanks for reading!
+
+
+
+
+
+
