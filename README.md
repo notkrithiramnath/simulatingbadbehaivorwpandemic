@@ -14,4 +14,4 @@ This was a project I made in my senior year in High school for our regional scie
 
 The full presentation can be viewed here: https://docs.google.com/presentation/d/1EL_nyW4g94297foC0v8yCOrmz7tbf0qRvpbUqXN8tFA/edit?usp=sharing
 
-Thank you!
+Thanks for reading!
